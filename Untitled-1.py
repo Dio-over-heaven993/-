@@ -20,9 +20,9 @@ T = 2*math.pi*math.sqrt(L/g)
 print(round(T /2))
 
 
- #if a > b >c :
-   # print('a > b >c')
- # if b > a > c:
- #   print('b > a > c')  
-  #if c > a > b:
-    #print('c > a > b') 
+ if a > b >c :
+    print('a > b >c')
+  if b > a > c:
+    print('b > a > c')  
+  if c > a > b:
+    print('c > a > b') 
