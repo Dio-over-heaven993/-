@@ -3,23 +3,23 @@
 import pandas as pd
 import numpy as np
 
-pupupu = pd.Series([4.313, 4.338, 4.358, 4.378, 4.4, 4.425, 4.447, 4.468])
-print(pupupu)
-pupupu1 = pd.Series(np.arange(0, 20, 2))
-print(pupupu1)
-pupupu2 = pd.Series({'Семейство': 1, 'Шмуклеров': 3, 'производило': 5, 'гвозди': 7})
-print(pupupu2)'
+ps = pd.Series([4.313, 4.338, 4.358, 4.378, 4.4, 4.425, 4.447, 4.468])
+print(ps)
+ps1 = pd.Series(np.arange(0, 20, 2))
+print(ps1)
+ps2 = pd.Series({'Семейство': 1, 'Шмуклеров': 3, 'производило': 5, 'гвозди': 7})
+print(ps2)'
 
 #2
 import pandas as pd
 import numpy as np
 
-pururu1 = pd.Series(np.arange(0, 8, 2))
-pururu2 = pd.Series(np.arange(2, 10, 1))
-print(pururu1, pururu2)
-wow = set.union(set(pururu1), set(pururu2))
-wown = pd.Series(list(wow))
-print(wown)
+s1 = pd.Series(np.arange(0, 8, 2))
+s2 = pd.Series(np.arange(2, 10, 1))
+print(s1, s2)
+a = set.union(set(s1), set(s2))
+w = pd.Series(list(a))
+print(w)
 
 #3
 import matplotlib.pyplot as plt
@@ -32,8 +32,8 @@ papapa = pd.Series({0: 'female',1: 'male',2: 'male',3: 'female',4: 'female',5: '
   27: 'female',28: 'male',29: 'female',30: 'male',31: 'female',32: 'female',
   33: 'male',34: 'female'})
 
-x = papapa.value_counts().index
-y = papapa.value_counts().values
+x = r.value_counts().index
+y = r.value_counts().values
 plt.bar(x, y, color=['pink', 'blue'])
 plt.xlabel('количество учеников')  # для оси x
 plt.ylabel('пол учеников')  # для оси y
